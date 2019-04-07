@@ -252,6 +252,7 @@ animation-delay: .8s;
 }
 .p-color,.theme-main-menu .navbar-nav>li.active>a,
 .theme-main-menu .navbar-nav>li>a:hover,#about-us .single-about-content:hover h5 a,
+#project-section .single-about-content:hover h5 a,
 #service-section .single-service-content:hover .icon-heading .icon,
 #service-section .single-service-content:hover .icon-heading h6 a,
 #pricing-section .single-price-table a:hover,#blog-section .single-news-item .img a,
@@ -269,12 +270,13 @@ animation-delay: .8s;
   color:#f1ddb6;
 }
 .p-color-bg,.theme-title h2:before,#about-us .single-about-content:hover .icon,
+#project-section .single-about-content:hover .icon,
 #skill-section .codeconSkillbar .skillBar,#our-client .owl-theme .owl-dots .owl-dot.active span,
 #our-client .owl-theme .owl-dots .owl-dot:hover span,
 .blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
   background: #f1ddb6;
 }
-.banner .project-button,#about-us .icon,#about-us .single-about-content a.more,
+.banner .project-button,#about-us .icon,#about-us .single-about-content a.more,#project-section .icon,#project-section .single-about-content a.more,
 #service-section .single-service-content:hover,#project-section .project-menu ul li.active,
 #project-section .project-menu ul li:hover,.page-middle-banner .opacity a,
 #team-section .team-member-wrapper .single-team-member .img .opacity h4,#pricing-section .single-price-table a,
@@ -302,7 +304,6 @@ animation-delay: .8s;
 }
 .theme-main-menu .navbar-nav>li>a {
   text-transform: uppercase;
-  color:#fff;
   font-weight: 700;
   background: transparent;
   padding: 9px 15px;
@@ -547,7 +548,6 @@ animation-delay: .8s;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
-  color:#292929;
   padding: 0 8px;
   border-width: 0;
   border-bottom-width:1px;
@@ -558,7 +558,7 @@ animation-delay: .8s;
 #project-section .project-gallery .grid-item {
   width: 33.33333333333%;
   padding: 0 15px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   float:left;
   display: none;
 }
@@ -662,6 +662,35 @@ animation-delay: .8s;
           transform: translate3D(0,0,0);
 }
 
+#project-section .single-about-content {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+#project-section .icon {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    line-height: 130px;
+    border-width: 2px;
+    font-size: 36px;
+    color:#292929;
+}
+#project-section h5 a {
+    color:#292929;
+    margin: 35px 0 20px 0;
+}
+#project-section .single-about-content a.more {
+    width: 130px;
+    line-height: 45px;
+    color:#292929;
+    border-width: 1px;
+    margin-top:22px;
+}
+#project-section .single-about-content a.more:hover,
+#project-section .single-about-content:hover .icon {
+    color:#fff;
+}
 /*** 
 
 ====================================================================
@@ -670,15 +699,15 @@ animation-delay: .8s;
 
  ***/
 .page-middle-banner {
-  background: url(../images/home/1.jpg) no-repeat center;
+  background: url(../images/project%20pic/间隔背景图.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 .page-middle-banner .opacity {
   background: rgba(0,0,0,0.8);
   text-align: center;
-  padding: 134px 0 137px 0;
+  padding: 70px 0 70px 0;
 }
 .page-middle-banner .opacity h3 {
   color: #fff;
@@ -1088,14 +1117,12 @@ animation-delay: .8s;
 
  ***/
 #partner-section {
-  margin: 100px 0 0 0;
-  background: #f9f9f9;
-  padding: 50px 0;
+  margin: 50px 0 0 0;
 }
 #partner-section .item {
   border:1px solid #dfdfdf;
-  height: 118px;
-  padding-top: 22px;
+  height: 80px;
+  padding-top: 10px;
 }
 #partner-section .item img {
   margin: 0 auto;
